@@ -8,33 +8,44 @@ public class NeighborhoodLibrary {
     private static Book[] books = new Book[6];
     private static int numOfBooks = 6;
     public static void main(String[] args) {
-        books[0]= new Book(1, "978-0451524935", "1984", false, "");
+        books[0] = new Book(1, "978-0451524935", "1984", false, "");
 
         books[1] = new Book(2, "978-0439708180", "Harry Potter and the Sorcerer's Stone", true, "Alice");
-        books[2] =  new Book(3, "978-0141439518", "Pride and Prejudice", false, "");
-        books[3] =  new Book(4, "978-0743273565", "The Great Gatsby", false, "");
+        books[2] = new Book(3, "978-0141439518", "Pride and Prejudice", false, "");
+        books[3] = new Book(4, "978-0743273565", "The Great Gatsby", false, "");
         books[4] = new Book(5, "978-0061120084", "To Kill a Mockingbird", true, "Bob");
         books[5] = new Book(6, "978-0547928227", "The Hobbit", false, "");
 
         Scanner scanner = new Scanner(System.in);
-        
+
         while (true) {
             System.out.println("Type in your first and Last name");
-            for (String s : Arrays.asList("How many books are you checking out", "What is the name of the book")) {
+            int books = scanner.nextInt();
 
-                switch (command) {
-                    case 1:
-                        numOfBooks();
-                        break;
 
-                    case 2:
-                        System.out.println("isCheckedOut");
-                        return;
+            switch (numOfBooks) {
+                case 1:
+                    System.out.println();
+                    break;
 
-                }
+                case 2:
+                    System.out.println("isCheckedOut");
+                    return;
 
+            }
+
+
+            switch (numOfBooks) {
+                case 1:
+                    System.out.println("How many books did you select");
+                    break;
+
+                case 2:
+                    System.out.println("isCheckedOut");
+                    return;
 
             }
 
 
         }
+    }}
