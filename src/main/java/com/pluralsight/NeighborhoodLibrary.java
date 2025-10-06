@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class NeighborhoodLibrary {
@@ -17,13 +18,23 @@ public class NeighborhoodLibrary {
 
         Scanner scanner = new Scanner(System.in);
         
-        while (true){
+        while (true) {
             System.out.println("Type in your first and Last name");
-            System.out.println("Checked out");
+            for (String s : Arrays.asList("How many books are you checking out", "What is the name of the book")) {
 
+                switch (command) {
+                    case 1:
+                        numOfBooks();
+                        break;
+
+                    case 2:
+                        System.out.println("isCheckedOut");
+                        return;
+
+                }
+
+
+            }
 
 
         }
-
-        }
-    }
