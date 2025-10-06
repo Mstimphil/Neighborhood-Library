@@ -15,26 +15,15 @@ public class NeighborhoodLibrary {
         books[4] = new Book(5, "978-0061120084", "To Kill a Mockingbird", true, "Bob");
         books[5] = new Book(6, "978-0547928227", "The Hobbit", false, "");
 
-        Scanner neighborhoodLibrary = new Scanner(System.in);
-        String Book = "";
+        Scanner scanner = new Scanner(System.in);
+        
+        while (true){
+            System.out.println("Type in your first and Last name");
+            System.out.println("Checked out");
 
 
-
-        while(Book.isCheckedOut()){
-
-            System.out.println("Enter your name: ");
-            books= neighborhoodLibrary.nextLine();
 
         }
-        neighborhoodLibrary.close();
 
-
-
-
-
+        }
     }
-
-
-
-}
-
