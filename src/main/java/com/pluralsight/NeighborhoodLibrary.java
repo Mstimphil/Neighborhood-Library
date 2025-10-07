@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class NeighborhoodLibrary {
     private static Book[] books = new Book[6];
-    private static int numOfBooks = 6;
     public static void main(String[] args) {
         books[0] = new Book(1, "978-0451524935", "1984", false, "");
 
@@ -19,32 +18,30 @@ public class NeighborhoodLibrary {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Type in your first and Last name");
-            int books = scanner.nextInt();
+            System.out.println("Store Home Screen:");
+            System.out.println("-----------------");
+            System.out.println("1. Show Available Books");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
 
-            switch (numOfBooks) {
+            switch (choice) {
                 case 1:
-                    System.out.println();
+
                     break;
 
                 case 2:
-                    System.out.println("isCheckedOut");
-                    return;
 
-            }
-
-
-            switch (numOfBooks) {
-                case 1:
-                    System.out.println("How many books did you select");
                     break;
+                case 3:
 
-                case 2:
-                    System.out.println("isCheckedOut");
-                    return;
+                    break;
+                default:
+                    System.out.println("Invalid Input");
 
             }
+
 
 
         }
