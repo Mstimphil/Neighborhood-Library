@@ -21,24 +21,40 @@ public class NeighborhoodLibrary {
             System.out.println("Store Home Screen:");
             System.out.println("-----------------");
             System.out.println("1. Show Available Books");
+            System.out.println("2. Show Checked Out Books");
+            System.out.println("3. Exit-close out of the application");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
 
 
-            switch (choice) {
+            switch(Books) {
                 case 1:
+                    System.out.println("You picked Book 1");
 
                     break;
 
                 case 2:
+                    System.out.println("You picked Book 2");
 
                     break;
                 case 3:
+                    System.out.println("You picked Book 3");
 
                     break;
+
+                case 4:
+                    System.out.println("You picked Book 4");
+
+                    break;
+
+                case 5:
+                    System.out.println("You picked Book 5");
+
+                    break;
+
                 default:
-                    System.out.println("Invalid Input");
+                    System.out.println("Exit-Close Application");
 
             }
 
