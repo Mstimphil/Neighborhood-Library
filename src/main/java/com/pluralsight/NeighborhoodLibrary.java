@@ -27,29 +27,33 @@ public class NeighborhoodLibrary {
             int choice = scanner.nextInt();
             scanner.nextLine();
 
+            for (int i = 1; i < 5 ; i++) {
 
-            switch(Books) {
+            }
+
+
+            switch(choice){
                 case 1:
-                    System.out.println("You picked Book 1");
+                    System.out.println("You picked Book \"Harry Potter and the Sorcerer's Stone\"");
 
                     break;
 
                 case 2:
-                    System.out.println("You picked Book 2");
+                    System.out.println("You picked Book \"Pride and Prejudice\"");
 
                     break;
                 case 3:
-                    System.out.println("You picked Book 3");
+                    System.out.println("You picked Book \"The Great Gatsby\" ");
 
                     break;
 
                 case 4:
-                    System.out.println("You picked Book 4");
+                    System.out.println("You picked Book \"To Kill a Mockingbird\"");
 
                     break;
 
                 case 5:
-                    System.out.println("You picked Book 5");
+                    System.out.println("You picked Book \"The Hobbit\"");
 
                     break;
 
